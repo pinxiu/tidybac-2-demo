@@ -840,10 +840,10 @@ function renderClassWorkspace() {
         <p>Hours burn-down, inline teacher assignment, and 班主任 mobile check-in.</p>
       </div>
       <div class="header-actions">
-        <select class="form-select" style="width:auto; font-weight:700;" onchange="state.selectedStudentId=this.value; renderAll();">
+        <select class="form-select" style="font-weight:700;" onchange="state.selectedStudentId=this.value; renderAll();">
           ${state.students.map(s => `
             <option value="${s.id}" ${s.id === stu.id ? 'selected' : ''}>
-              ${s.chineseName} (${s.englishName}) · ${s.completedHours}/${s.purchasedHours}h
+              ${s.chineseName} (${s.englishName})
             </option>
           `).join("")}
         </select>

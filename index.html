@@ -122,16 +122,16 @@
     .control-group select {
       appearance: none;
       -webkit-appearance: none;
-      background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") no-repeat right 2px center;
+      background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") no-repeat right 4px center;
       color: #f8fafc;
       border: none;
-      padding-right: 18px;
+      padding: 2px 20px 2px 2px;
       font-weight: 600;
       font-size: 12px;
       outline: none;
       cursor: pointer;
       width: auto;
-      max-width: 175px;
+      max-width: 150px;
       text-overflow: ellipsis;
     }
     .control-group select option {
@@ -672,20 +672,20 @@
         <div class="control-group">
           <label>Role</label>
           <select id="persona-select" onchange="changePersona(this.value)">
-            <option value="betty">Betty Zhou (Admin)</option>
+            <option value="betty">Betty Zhou</option>
             <option value="reeya">Reeya (Sales)</option>
-            <option value="ava">Ava史老师 (班主任)</option>
-            <option value="charlotte">Charlotte (班主任)</option>
-            <option value="zhu">朱老师 (Teacher)</option>
-            <option value="parent">孙栩妮家长 (Parent)</option>
+            <option value="ava">Ava史老师</option>
+            <option value="charlotte">Charlotte</option>
+            <option value="zhu">朱老师</option>
+            <option value="parent">孙栩妮家长</option>
           </select>
         </div>
         <div class="control-group">
           <label>Entity</label>
           <select id="entity-select" onchange="changeEntity(this.value)">
             <option value="ALL">SOA + SHA</option>
-            <option value="SOA">SOA (上海顶石)</option>
-            <option value="SHA">SHA (US)</option>
+            <option value="SOA">SOA 顶石</option>
+            <option value="SHA">SHA US</option>
           </select>
         </div>
       </div>
