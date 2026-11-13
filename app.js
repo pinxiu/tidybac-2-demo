@@ -933,12 +933,12 @@ function renderClassWorkspace() {
 
           <!-- Inline Add Course -->
           <div style="display:flex; gap:8px; margin-top:12px; padding-top:12px; border-top:1px solid #e2e8f0; align-items:center; flex-wrap:wrap;">
-            <select id="quick-course-name" class="form-select" style="flex:1; min-width:190px;">
+            <select id="quick-course-name" class="form-select">
               <option value="AP Macroeconomics (1v1 · 40H)">AP Macroeconomics (1v1 · 40H)</option>
               <option value="Honors Physics (1v1 · 40H)">Honors Physics (1v1 · 40H)</option>
               <option value="AP Calculus BC (1v1 · 40H)">AP Calculus BC (1v1 · 40H)</option>
             </select>
-            <select id="quick-teacher-name" class="form-select" style="width:180px;">
+            <select id="quick-teacher-name" class="form-select">
               ${state.teachers.map(t => `<option value="${t.name}">${t.name}</option>`).join("")}
             </select>
             <button class="btn btn-success btn-sm" onclick="addCourseToStudent('${stu.id}')">+ Enroll Course</button>
